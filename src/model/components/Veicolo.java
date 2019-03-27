@@ -16,6 +16,7 @@ abstract class Veicolo {
 	public Integer peso;
 	public Integer altezza;
 	public Integer qtaCO2;
+	public Integer euro;
 	
 	
 	
@@ -28,9 +29,10 @@ abstract class Veicolo {
 	 * @param peso
 	 * @param altezza
 	 * @param qtaCO2
+	 * @param euro
 	 */
 	public Veicolo(String targa, String modello, String marca, Integer anno, Integer assi, Integer peso,
-			Integer altezza, Integer qtaCO2) {
+			Integer altezza, Integer qtaCO2, Integer euro) {
 		this.targa = targa;
 		this.modello = modello;
 		this.marca = marca;
@@ -39,7 +41,23 @@ abstract class Veicolo {
 		this.peso = peso;
 		this.altezza = altezza;
 		this.qtaCO2 = qtaCO2;
+		this.euro = euro;
 	}
+	
+	/**
+	 * @return the euro
+	 */
+	public Integer getEuro() {
+		return euro;
+	}
+
+	/**
+	 * @param euro the euro to set
+	 */
+	public void setEuro(Integer euro) {
+		this.euro = euro;
+	}
+
 	/**
 	 * @return the targa
 	 */
