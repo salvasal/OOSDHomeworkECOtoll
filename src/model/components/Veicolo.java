@@ -7,7 +7,7 @@ package model.components;
  * @author Salernitano Salvatore Matricola 242016
  *
  */
-abstract class Veicolo {
+public class Veicolo {
 	public String targa;
 	public String modello;
 	public String marca;
