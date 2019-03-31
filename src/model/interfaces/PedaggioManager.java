@@ -12,8 +12,8 @@ import model.components.Veicolo;
  *
  */
 public interface PedaggioManager {
-	public Integer setpercorso(Casello c1, Casello c2);
-	public Integer setpedaggio(Veicolo v, Autostrada a);
+	public Integer setPercorso(Casello c1, Casello c2);
+	public Integer setPedaggio(Veicolo v, Autostrada a);
 	
 
 }
