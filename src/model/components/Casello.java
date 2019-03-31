@@ -19,7 +19,6 @@ public class Casello {
 	 * @param km
 	 */
 	public Casello(String id, String citta, String coordinate, Integer km) {
-		super();
 		this.id = id;
 		Citta = citta;
 		Coordinate = coordinate;

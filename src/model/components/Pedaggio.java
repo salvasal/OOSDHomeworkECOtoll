@@ -13,7 +13,7 @@ import model.interfaces.PedaggioManager;
  */
 public class Pedaggio implements PedaggioManager {
 	public String id;
-	public Date data;
+	public String data;
 	public Integer percorso;
 	public Integer CostoTot;
 	/**
@@ -21,12 +21,13 @@ public class Pedaggio implements PedaggioManager {
 	 * @param data
 	 * @param Autostrada
 	 * @param Veicolo
+	 * @param Casello
+	 * @param Casello
 	 */
-	public Pedaggio(String id, Date data, Autostrada a, Veicolo v) {
-		super();
+	public Pedaggio(String id, String data, Autostrada a, Veicolo v, Casello c1, Casello c2) {
 		this.id = id;
 		this.data = data;
-		this.percorso = setPercorso(a.Caselli.get(0), a.Caselli.get(1));
+		this.percorso = setPercorso(c1, c2);
 		this.CostoTot = setPedaggio(v, a);
 	}
 	/**
@@ -44,13 +45,13 @@ public class Pedaggio implements PedaggioManager {
 	/**
 	 * @return the data
 	 */
-	public Date getData() {
+	public String getData() {
 		return data;
 	}
 	/**
 	 * @param data the data to set
 	 */
-	public void setData(Date data) {
+	public void setData(String data) {
 		this.data = data;
 	}
 	/**

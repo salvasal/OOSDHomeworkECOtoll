@@ -21,7 +21,6 @@ public class Autostrada {
 	 * @param caselli
 	 */
 	public Autostrada(String codice, String nome, String tipo, List<Casello> caselli) {
-		super();
 		this.codice = codice;
 		this.nome = nome;
 		this.tipo = tipo;
